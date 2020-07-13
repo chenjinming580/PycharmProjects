@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.6.5 on win32)" generated="20200525 14:05:33.887" rpa="false">
+<suite id="s1" name="T2" source="F:\PycharmProjects\untitled\rf1222\day3\job\t2.robot">
+<test id="s1-t1" name="测试">
+<kw name="Delete All Course" library="t1" type="setup">
+<status status="PASS" starttime="20200525 14:05:34.041" endtime="20200525 14:05:41.069"></status>
+</kw>
+<kw name="Add" library="t1">
+<arguments>
+<arg>初中化学111</arg>
+<arg>测试</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20200525 14:05:41.069" endtime="20200525 14:05:43.081"></status>
+</kw>
+<kw name="Add" library="t1">
+<arguments>
+<arg>初中化学2</arg>
+<arg>测试11</arg>
+<arg>22</arg>
+</arguments>
+<status status="PASS" starttime="20200525 14:05:43.082" endtime="20200525 14:05:45.101"></status>
+</kw>
+<kw name="List" library="t1">
+<arguments>
+<arg>1</arg>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>@{course}</var>
+</assign>
+<msg timestamp="20200525 14:05:47.109" level="INFO">@{course} = [ 初中化学111 | 初中化学2 ]</msg>
+<status status="PASS" starttime="20200525 14:05:45.102" endtime="20200525 14:05:47.109"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>@{course}</arg>
+</arguments>
+<status status="PASS" starttime="20200525 14:05:47.109" endtime="20200525 14:05:47.110"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${course}</arg>
+<arg>初中化学2</arg>
+</arguments>
+<status status="PASS" starttime="20200525 14:05:47.111" endtime="20200525 14:05:47.111"></status>
+</kw>
+<kw name="Delete All Course" library="t1" type="teardown">
+<status status="PASS" starttime="20200525 14:05:47.111" endtime="20200525 14:05:56.740"></status>
+</kw>
+<status status="PASS" starttime="20200525 14:05:34.040" endtime="20200525 14:05:56.741" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200525 14:05:33.889" endtime="20200525 14:05:56.742"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="T2">T2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

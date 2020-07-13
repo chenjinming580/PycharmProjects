@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.6.5 on win32)" generated="20200531 11:48:10.314" rpa="false">
+<suite id="s1" name="Tc" source="F:\PycharmProjects\untitled\rf1222\task\tc">
+<kw name="Setup Web Test" library="pylib.WebOpAdmin" type="setup">
+<status status="PASS" starttime="20200531 11:48:10.433" endtime="20200531 11:48:13.442"></status>
+</kw>
+<suite id="s1-s1" name="教管系统" source="F:\PycharmProjects\untitled\rf1222\task\tc\教管系统">
+<kw name="Login Web Site" library="pylib.WebOpAdmin" type="setup">
+<status status="PASS" starttime="20200531 11:48:13.447" endtime="20200531 11:48:14.296"></status>
+</kw>
+<suite id="s1-s1-s1" name="培训班管理" source="F:\PycharmProjects\untitled\rf1222\task\tc\教管系统\培训班管理.robot">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>deleteAll</arg>
+<arg>teacher</arg>
+<arg>AND</arg>
+<arg>deleteAll</arg>
+<arg>course</arg>
+<arg>AND</arg>
+<arg>AddCourse</arg>
+<arg>初中语文</arg>
+<arg>测试</arg>
+<arg>2</arg>
+<arg>AND</arg>
+<arg>AddCourse</arg>
+<arg>初中数学</arg>
+<arg>测试</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Delete All" library="pylib.WebOpAdmin">
+<arguments>
+<arg>teacher</arg>
+</arguments>
+<status status="PASS" starttime="20200531 11:48:14.302" endtime="20200531 11:48:16.807"></status>
+</kw>
+<kw name="Delete All" library="pylib.WebOpAdmin">
+<arguments>
+<arg>course</arg>
+</arguments>
+<status status="PASS" starttime="20200531 11:48:16.807" endtime="20200531 11:48:21.416"></status>
+</kw>
+<kw name="Add Course" library="pylib.WebOpAdmin">
+<arguments>
+<arg>初中语文</arg>
+<arg>测试</arg>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20200531 11:48:21.416" endtime="20200531 11:48:23.683"></status>
+</kw>
+<kw name="Add Course" library="pylib.WebOpAdmin">
+<arguments>
+<arg>初中数学</arg>
+<arg>测试</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20200531 11:48:23.683" endtime="20200531 11:48:25.876"></status>
+</kw>
+<status status="PASS" starttime="20200531 11:48:14.301" endtime="20200531 11:48:25.876"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="case1">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>添加培训班</arg>
+</arguments>
+<status status="PASS" starttime="20200531 11:48:25.877" endtime="20200531 11:48:25.877"></status>
+</kw>
+<kw name="AD Dtraining" library="pylib.WebOpAdmin">
+<arguments>
+<arg>初中班</arg>
+<arg>测试</arg>
+<arg>2</arg>
+<arg>初中语文</arg>
+<arg>初中数学</arg>
+</arguments>
+<status status="PASS" starttime="20200531 11:48:25.878" endtime="20200531 11:48:27.346"></status>
+</kw>
+<kw name="Get Alllist" library="pylib.WebOpAdmin">
+<arguments>
+<arg>training</arg>
+</arguments>
+<assign>
+<var>${traininglist}</var>
+</assign>
+<msg timestamp="20200531 11:48:27.411" level="INFO">${traininglist} = ['初中培训班', '初中班', '测试']</msg>
+<status status="PASS" starttime="20200531 11:48:27.346" endtime="20200531 11:48:27.411"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>['初中班','测试']==$traininglist</arg>
+</arguments>
+<msg timestamp="20200531 11:48:27.417" level="FAIL">'['初中班','测试']==$traininglist' should be true.</msg>
+<status status="FAIL" starttime="20200531 11:48:27.411" endtime="20200531 11:48:27.417"></status>
+</kw>
+<tags>
+<tag>回归测试</tag>
+<tag>培训班管理</tag>
+</tags>
+<status status="FAIL" starttime="20200531 11:48:25.876" endtime="20200531 11:48:27.417" critical="yes">'['初中班','测试']==$traininglist' should be true.</status>
+</test>
+<status status="FAIL" starttime="20200531 11:48:14.296" endtime="20200531 11:48:27.419"></status>
+</suite>
+<status status="FAIL" starttime="20200531 11:48:13.442" endtime="20200531 11:48:27.432"></status>
+</suite>
+<kw name="Tear Down Web Test" library="pylib.WebOpAdmin" type="teardown">
+<status status="PASS" starttime="20200531 11:48:27.443" endtime="20200531 11:48:29.535"></status>
+</kw>
+<status status="FAIL" starttime="20200531 11:48:10.316" endtime="20200531 11:48:29.535"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">回归测试</stat>
+<stat pass="0" fail="1">培训班管理</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Tc">Tc</stat>
+<stat pass="0" fail="1" id="s1-s1" name="教管系统">Tc.教管系统</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="培训班管理">Tc.教管系统.培训班管理</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
