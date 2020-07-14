@@ -24,9 +24,9 @@ def add(name, desc, dispay_idx, idSavedName=None):
 def delete(id):
     header = {'Content-Type': 'application/x-www-form-urlencoded'}
     payload = {'action': 'delete_course', 'id': id}
-    s= requests.delete(f'{host}/api/mgr/sq_mgr/', headers=header, data=payload)
+    respone= requests.delete(f'{host}/api/mgr/sq_mgr/', headers=header, data=payload)
     try:
-        return s.json()
+        return respone.json()
     except:
         return {'retcode': 888, 'reason': '项目异常'}
 
