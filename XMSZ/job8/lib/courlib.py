@@ -10,9 +10,9 @@ def add(name, desc, dispay_idx, idSavedName=None):
     payload = {
         'action': 'add_course',
         'data': f'{{"name":"{name}","desc":"{desc}","display_idx":"{dispay_idx}"}}'}
-    respon = requests.post(f'{host}/api/mgr/sq_mgr/', headers=header, data=payload)
+    s = requests.post(f'{host}/api/mgr/sq_mgr/', headers=header, data=payload)
 
-    r = respon.json()
+    r = s.json()
     if idSavedName:
         print('before')
         BuiltIn().set_global_variable(f'${idSavedName}', r['id'])
