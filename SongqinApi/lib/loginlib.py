@@ -11,3 +11,6 @@ def login(username,password):
         return {'retcode': 888, 'reason': '项目异常'}
 
 
+if __name__ == '__main__':
+    r=login('auto','sdfsdfsdf')
+    print(r)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200713 11:37:10.404" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200714 14:03:06.909" rpa="false">
 <suite id="s1" name="Tc" source="F:\PycharmProjects\XMSZ\job8\tc">
 <suite id="s1-s1" name="D-空环境" source="F:\PycharmProjects\XMSZ\job8\tc\d-空环境">
 <kw name="Run Keywords" library="BuiltIn" type="setup">
@@ -18,16 +18,16 @@
 <arg>1</arg>
 <arg>100</arg>
 </arguments>
-<status status="PASS" starttime="20200713 11:37:10.477" endtime="20200713 11:37:14.493"></status>
+<status status="PASS" starttime="20200714 14:03:07.149" endtime="20200714 14:03:11.492"></status>
 </kw>
 <kw name="Deleteallcourse" library="lib.courlib">
 <arguments>
 <arg>1</arg>
 <arg>100</arg>
 </arguments>
-<status status="PASS" starttime="20200713 11:37:14.493" endtime="20200713 11:37:18.507"></status>
+<status status="PASS" starttime="20200714 14:03:11.492" endtime="20200714 14:03:15.552"></status>
 </kw>
-<status status="PASS" starttime="20200713 11:37:10.477" endtime="20200713 11:37:18.507"></status>
+<status status="PASS" starttime="20200714 14:03:07.149" endtime="20200714 14:03:15.552"></status>
 </kw>
 <suite id="s1-s1-s1" name="D-课程初中化学" source="F:\PycharmProjects\XMSZ\job8\tc\d-空环境\d-课程初中化学">
 <kw name="Add" library="lib.courlib" type="setup">
@@ -37,10 +37,10 @@
 <arg>1</arg>
 <arg>suitesetclassid</arg>
 </arguments>
-<msg timestamp="20200713 11:37:20.586" level="INFO">${suitesetclassid} = 2013</msg>
-<msg timestamp="20200713 11:37:20.586" level="INFO">before
-global var set: $suitesetclassid:2013</msg>
-<status status="PASS" starttime="20200713 11:37:18.509" endtime="20200713 11:37:20.586"></status>
+<msg timestamp="20200714 14:03:17.672" level="INFO">${suitesetclassid} = 2025</msg>
+<msg timestamp="20200714 14:03:17.672" level="INFO">before
+global var set: $suitesetclassid:2025</msg>
+<status status="PASS" starttime="20200714 14:03:15.552" endtime="20200714 14:03:17.672"></status>
 </kw>
 <suite id="s1-s1-s1-s1" name="老师管理" source="F:\PycharmProjects\XMSZ\job8\tc\d-空环境\d-课程初中化学\老师管理.robot">
 <test id="s1-s1-s1-s1-t1" name="添加老师001">
@@ -57,40 +57,40 @@ global var set: $suitesetclassid:2013</msg>
 <assign>
 <var>${ret}</var>
 </assign>
-<msg timestamp="20200713 11:37:22.753" level="INFO">${suiteseteacherid} = 387</msg>
-<msg timestamp="20200713 11:37:22.753" level="INFO">before
-global var set: $suiteseteacherid:387</msg>
-<msg timestamp="20200713 11:37:22.753" level="INFO">${ret} = {'retcode': 0, 'id': 387}</msg>
-<status status="PASS" starttime="20200713 11:37:20.590" endtime="20200713 11:37:22.753"></status>
+<msg timestamp="20200714 14:03:19.822" level="INFO">${suiteseteacherid} = 399</msg>
+<msg timestamp="20200714 14:03:19.822" level="INFO">before
+global var set: $suiteseteacherid:399</msg>
+<msg timestamp="20200714 14:03:19.822" level="INFO">${ret} = {'retcode': 0, 'id': 399}</msg>
+<status status="PASS" starttime="20200714 14:03:17.672" endtime="20200714 14:03:19.822"></status>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <doc>Fails if the given condition is not true.</doc>
 <arguments>
 <arg>$ret['retcode']==0</arg>
 </arguments>
-<status status="PASS" starttime="20200713 11:37:22.754" endtime="20200713 11:37:22.757"></status>
+<status status="PASS" starttime="20200714 14:03:19.822" endtime="20200714 14:03:19.832"></status>
 </kw>
 <kw name="Delete Teacher" library="lib.teacherlib" type="teardown">
 <arguments>
 <arg>${suiteseteacherid}</arg>
 </arguments>
-<status status="PASS" starttime="20200713 11:37:22.758" endtime="20200713 11:37:24.819"></status>
+<status status="PASS" starttime="20200714 14:03:19.832" endtime="20200714 14:03:21.922"></status>
 </kw>
-<status status="PASS" starttime="20200713 11:37:20.589" endtime="20200713 11:37:24.820" critical="yes"></status>
+<status status="PASS" starttime="20200714 14:03:17.672" endtime="20200714 14:03:21.922" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200713 11:37:20.586" endtime="20200713 11:37:24.820"></status>
+<status status="PASS" starttime="20200714 14:03:17.672" endtime="20200714 14:03:21.922"></status>
 </suite>
 <kw name="Delete" library="lib.courlib" type="teardown">
 <arguments>
 <arg>${suitesetclassid}</arg>
 </arguments>
-<status status="PASS" starttime="20200713 11:37:24.822" endtime="20200713 11:37:26.894"></status>
+<status status="PASS" starttime="20200714 14:03:21.922" endtime="20200714 14:03:24.022"></status>
 </kw>
-<status status="PASS" starttime="20200713 11:37:18.507" endtime="20200713 11:37:26.894"></status>
+<status status="PASS" starttime="20200714 14:03:15.552" endtime="20200714 14:03:24.022"></status>
 </suite>
-<status status="PASS" starttime="20200713 11:37:10.422" endtime="20200713 11:37:26.896"></status>
+<status status="PASS" starttime="20200714 14:03:06.959" endtime="20200714 14:03:24.022"></status>
 </suite>
-<status status="PASS" starttime="20200713 11:37:10.405" endtime="20200713 11:37:26.897"></status>
+<status status="PASS" starttime="20200714 14:03:06.909" endtime="20200714 14:03:24.022"></status>
 </suite>
 <statistics>
 <total>

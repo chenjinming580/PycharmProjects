@@ -19,6 +19,7 @@ def ha():
     def foo():
         a = "hello world"  # E（enclosing）嵌套作用域
 
+
         def bar():
             b = "hello python"  # L（Local）：局部作用域
             print(a)

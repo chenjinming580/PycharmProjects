@@ -1,7 +1,7 @@
 # author:JinMing time:2020-05-09
 
-# print(ord('这'))
-# # print(hex(34567))
+# print(ord('这'))  字符的unicode
+# # print(hex(34567)) 十进制转化为十六进制
 # # var = '年后'.encode('utf8')
 # # print(var)
 list=[]
