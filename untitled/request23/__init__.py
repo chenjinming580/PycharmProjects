@@ -2,6 +2,7 @@
 # from config import *
 age=13
 bbb=1323242
+ffff=4544657
 class ceshiclass:
 
     name='小陈'
