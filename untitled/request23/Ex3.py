@@ -11,8 +11,8 @@ payload={
 }
 
 
-r=requests.post('http://127.0.0.1:80/api/mgr/sq_mgr/',headers=header,data=payload)
-print(r.text)
+rs=requests.post('http://127.0.0.1:80/api/mgr/sq_mgr/',headers=header,data=payload)
+print(rs.text)
 
 
 # dict1={'Content-Type':'application/x-www-form-urlencoded'}
