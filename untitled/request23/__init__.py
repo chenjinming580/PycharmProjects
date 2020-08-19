@@ -2,7 +2,12 @@
 # from config import *
 age=13
 bbb=1323242
+
 ffff=4544657
+
+ccc=565656
+eee=233323
+
 class ceshiclass:
 
     name='小陈'
@@ -23,8 +28,8 @@ class ceshiclass:
 
     @staticmethod
     def ceshi3():
-        age=1213
-        return age
+        name=1213
+        return name
 
 
 
