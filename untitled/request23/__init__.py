@@ -1,7 +1,7 @@
 # author:JinMing time:2020-04-21
 # from config import *
 age=13
-bbb=132324
+bbb=1323242
 class ceshiclass:
 
     name='小陈'
