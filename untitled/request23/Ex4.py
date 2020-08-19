@@ -22,5 +22,5 @@ payload={
         "desc":"初中化学课程",
         "display_idx":"4"}}
 
-r=requests.post('http://127.0.0.1/apijson/mgr/sq_mgr/',headers=header,json=payload)
-print(r.text)
+rs=requests.post('http://127.0.0.1/apijson/mgr/sq_mgr/',headers=header,json=payload)
+print(rs.text)
