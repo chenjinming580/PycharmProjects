@@ -21,8 +21,8 @@ class ceshiclass:
 
     @staticmethod
     def ceshi3():
-        sdd=1213
-        return sdd
+        name=1213
+        return name
 
 
 
