@@ -21,8 +21,8 @@ class ceshiclass:
 
     @staticmethod
     def ceshi3():
-        name=1213
-        return name
+        age=1213
+        return age
 
 
 
