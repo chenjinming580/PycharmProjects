@@ -3,6 +3,7 @@ Library  SeleniumLibrary
 
 *** Test Cases ***
 case1
+  [Documentation]  测试
   ${var}   set variable  2000
   ${num}   convert to integer  2020
   ${folat}  convert to number  3.8

@@ -39,6 +39,7 @@ reportFile=open(path,'wb')
 #第三方插件HTMLTestRunner 可以返回一个runner对象
 runner=HTMLTestRunner(stream=reportFile,verbosity=2,description='用例执行明细',
                       title='xxx项目的测试报告',tester='陈金明')
+
 runner.run(suite)
 
 

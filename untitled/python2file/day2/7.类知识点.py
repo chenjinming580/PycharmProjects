@@ -38,7 +38,7 @@
 #
 #     @classmethod
 #     def foo3(cls):
-#         print(cls.age)
+#         print(cls.name)
 #         print("类方法")
 
 
