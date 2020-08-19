@@ -31,10 +31,10 @@ str.extend([666])
 print(str)
 
 
-s=['i','like','football']
+str=['i','like','football']
 
 print(','.join(str))
-s.extend([1,2,3])
+str.extend([1,2,3])
 
 
 print(str)
