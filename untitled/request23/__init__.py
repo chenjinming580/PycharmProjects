@@ -1,6 +1,7 @@
 # author:JinMing time:2020-04-21
 # from config import *
 age=13
+ccc=565656
 class ceshiclass:
 
     name='小陈'
@@ -21,8 +22,8 @@ class ceshiclass:
 
     @staticmethod
     def ceshi3():
-        age=1213
-        return age
+        name=1213
+        return name
 
 
 
